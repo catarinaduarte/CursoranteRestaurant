@@ -268,7 +268,7 @@ header .header-inner .header-inner-col .header-inner-nav .header-inner-nav-menu 
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   position: absolute;
-  top: -5%;
+  top: 5%;
 }
 
 *,
