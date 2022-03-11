@@ -1,0 +1,62 @@
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  pointer-events: none;
+  contain: layout style size;
+}
+
+.cursor.media-blend {
+  z-index: 100;
+  mix-blend-mode: exclusion;
+}
+
+.cursor.media-blend .cursor-media {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.cursor:before {
+  content: "";
+  position: absolute;
+  top: -24px;
+  left: -24px;
+  display: block;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  -webkit-transform: scale(0.2);
+          transform: scale(0.2);
+  background: black;
+}
+
+.cursor .cursor-media {
+  display: block;
+  width: 350px;
+  height: 350px;
+  border-radius: 100%;
+  overflow: hidden;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  margin: -175px 0 0 -175px;
+  position: relative;
+}
+
+.cursor .cursor-media video {
+  height: 350px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  position: absolute;
+}
+
+.cursor .cursor-media #desserts {
+  height: 350px;
+  left: 46%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  position: absolute;
+  top: -5%;
+}
+/*# sourceMappingURL=cursor.css.map */
